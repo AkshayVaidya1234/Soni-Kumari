@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [group suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="edge"/>
+    <groups>
+      <run>
+        <include name="Master"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Testcase.Tc2">
+        <methods>
+          <include name="loginaccount"/>
+        </methods>
+      </class> <!-- Testcase.Tc2 -->
+      <class name="Testcase.Testcase01">
+        <methods>
+          <include name="registeraccount"/>
+        </methods>
+      </class> <!-- Testcase.Testcase01 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [group suite] -->
